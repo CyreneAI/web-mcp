@@ -14,25 +14,6 @@ This repository contains the Web MCP (Multi-Channel Platform) server, a speciali
 
 The web-mcp is one of several specialized MCP servers. It communicates with external web APIs (like SerpApi, NewsAPI) to perform its functions. The cyrene-agent discovers its tools via the fastmcp-core-server and then directly calls these tools on the web-mcp service.
 
-```mermaid
-graph TD
-    cyrene_agent -->|HTTP Tool Calls| web_mcp
-    web_mcp -->|External APIs| SerpApi[SerpApi]
-    web_mcp -->|External APIs| StackOverflow[Stack Overflow API]
-    web_mcp -->|External APIs| NewsAPI[NewsAPI.org]
-
-    subgraph This Repository (web-mcp)
-        web_mcp[web-mcp/server.py]
-    end
-
-    subgraph External Services
-        cyrene_agent[cyrene-agent (bot-api)]
-        fastmcp_core_server[fastmcp-core-server]
-    end
-
-    fastmcp_core_server -- Registers Tools --> web_mcp
-````
-
 ## 🚀 Getting Started
 
 ### Prerequisites
