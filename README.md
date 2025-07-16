@@ -1,6 +1,6 @@
-## 🌐 Web MCP (Multi-Channel Platform Server)
+## 🌐 Web MCP
 
-This repository contains the Web MCP (Multi-Channel Platform) server, a specialized microservice within the Multi-Agent Bot system. Its primary role is to expose a suite of web-related tools (like general web search, Stack Overflow search, and news retrieval) via the FastMCP protocol, making them discoverable and invokable by the cyrene-agent (bot-api) service.
+This repository contains the Web MCP (MOdel-Context Protocol) server, a specialized microservice within the Multi-Agent Bot system. Its primary role is to expose a suite of web-related tools (like general web search, Stack Overflow search, and news retrieval) via the FastMCP protocol, making them discoverable and invokable by the cyrene-agent (bot-api) service.
 
 ## ✨ Features
 
