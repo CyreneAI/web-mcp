@@ -124,7 +124,7 @@ async def newsapi_org(topic: str, num_results: int = 5) -> dict:
     return {"topic": topic, "headlines": headlines}
 
 
-
+##tool to fetch live weather data
 @mcp.tool()
 async def get_weather(city: str) -> dict:
     """
